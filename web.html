@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web design projects by Kiram Ahmed Khan.">
+  <title>Web Design Projects | Kiram Ahmed Khan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="site-loader" id="site-loader" aria-label="Loading"><div class="loader-logo">KAK</div><div class="loader-line"><span></span></div></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header" data-site-header>
+    <a class="brand-mark" href="index.html" aria-label="Kiram Ahmed Khan home">KAK</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><i data-lucide="menu"></i></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="about.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero animated-field">
+      <div class="page-title-glass reveal-up">
+        <p>Selected Work</p>
+        <h1>Web Design Projects</h1>
+      </div>
+    </section>
+
+    <section class="work-section section-pad">
+      <div class="content-wrap">
+        <div class="work-grid">
+          <a class="work-card reveal-up magnetic" href="https://www.aatccaust.org/" target="_blank" rel="noreferrer">
+            <figure class="work-media"><img src="https://i.imgur.com/KOD5eL5.png" alt="Student Chapter Website preview"></figure>
+            <div class="work-body">
+              <h2>Student Chapter Website <span>current</span></h2>
+              <p>Official website of AATCC AUST Student Chapter.</p>
+              <span class="card-link">Visit project <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal-up magnetic" href="https://loom-official.github.io/landing-page/" target="_blank" rel="noreferrer">
+            <figure class="work-media"><img src="https://i.imgur.com/a7D2xdE.png" alt="Online shop website preview"></figure>
+            <div class="work-body">
+              <h2>Online Shop Website <span>past</span></h2>
+              <p>An online clothing shop with order tracking, built for a low-budget commerce launch without a payment gateway.</p>
+              <span class="card-link">Visit project <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal-up magnetic" href="https://kiramahmedkhan.github.io/austidc/" target="_blank" rel="noreferrer">
+            <figure class="work-media"><img src="https://i.imgur.com/xgCq8f2.png" alt="University club website preview"></figure>
+            <div class="work-body">
+              <h2>University Club Website <span>demo</span></h2>
+              <p>Designed as a website concept for AUST Innovation &amp; Design Club, later inspiring parts of their official site UI.</p>
+              <span class="card-link">Visit project <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+
+          <a class="work-card reveal-up magnetic" href="https://kiramahmedkhan.github.io/LIFE-DROPS/" target="_blank" rel="noreferrer">
+            <figure class="work-media"><img src="https://i.imgur.com/qCO1IKG.png" alt="Blood donation organization website preview"></figure>
+            <div class="work-body">
+              <h2>Blood Donation Org. Website <span>demo</span></h2>
+              <p>A modern interface direction for how a blood donation organization's website can feel urgent, human, and clear.</p>
+              <span class="card-link">Visit project <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand-mark" href="index.html">KAK</a>
+      <nav aria-label="Footer navigation">
+        <a href="web.html">Web</a>
+        <a href="graph.html">Graphics</a>
+        <a href="digit.html">Digital</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>&copy; 2026 Kiram Ahmed Khan. Developer by logic. Designer by vision.</p>
+    </div>
+  </footer>
+</body>
+</html>

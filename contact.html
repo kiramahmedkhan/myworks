@@ -1,47 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — Kiram Ahmed Khan</title>
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Kiram Ahmed Khan for web, design, and digital creation work.">
+  <title>Contact | Kiram Ahmed Khan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="main.js"></script>
 </head>
 <body>
-<div id="loader"><img src="https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_FDlCkozN8qN9w3UpNz4QE/4c038ba8-d826-4a85-8704-aecbf3a1f74d.png"><div class="loader-bar"><span></span></div></div>
-<div id="progress"></div><div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <div class="site-loader" id="site-loader" aria-label="Loading"><div class="loader-logo">KAK</div><div class="loader-line"><span></span></div></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
-<nav>
-  <a href="index.html" class="logo">KAK</a>
-  <div class="burger"><span></span><span></span><span></span></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="web-design.html">Web</a></li>
-    <li><a href="graphic-design.html">Graphic</a></li>
-    <li><a href="digital-creation.html">Digital</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <header class="site-header" data-site-header>
+    <a class="brand-mark" href="index.html" aria-label="Kiram Ahmed Khan home">KAK</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><i data-lucide="menu"></i></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="about.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<section class="contact-wrap">
-  <div class="contact-card" data-aos="zoom-in">
-    <h1>Let's <span style="background:var(--grad);-webkit-background-clip:text;color:transparent">Talk</span></h1>
-    <p>Have a project in mind? Reach out — I usually reply fast.</p>
-    <div class="contact-list">
-      <a href="https://wa.me/8801606148203?text=Hi%2C%20Kiram!%20I%20want%20a%20meeting%20appointment%20over%20some%20digital%20stuff%20with%20you.%20Are%20you%20free%20now%3F" target="_blank">💬 WhatsApp — +880 1606 148203</a>
-      <a href="mailto:kiram.te.00724214121328@aust.edu?subject=Meeting%20Appointment&body=Hi%2C%20Kiram!%20I%20want%20a%20meeting%20appointment%20over%20some%20digital%20stuff%20with%20you.%20Are%20you%20free%20now%3F">✉ Email — kiram.te.00724214121328@aust.edu</a>
-      <a href="https://www.facebook.com/kiramahmedkhan" target="_blank">📘 Facebook</a>
-      <a href="https://www.instagram.com/kiramahmedkhan" target="_blank">📷 Instagram</a>
-      <a href="https://www.linkedin.com/in/kiramahmedkhan" target="_blank">in LinkedIn</a>
+  <main>
+    <section class="contact-hero animated-field">
+      <div class="contact-layout">
+        <div class="contact-copy reveal-up">
+          <p class="eyebrow">Contact</p>
+          <h1>Let's build something sharp, useful, and memorable.</h1>
+          <p>Reach out for portfolio websites, visual systems, campaign design, digital content, or a quick creative consultation.</p>
+        </div>
+
+        <div class="contact-actions reveal-up">
+          <a class="contact-row magnetic" href="mailto:kiram.te.00724214121328@aust.edu?subject=Meeting%20appointment&body=Hi%2C%20Kiram%21%20I%20want%20a%20meeting%20appointment%20over%20some%20digital%20stuff%20with%20you.%20Are%20you%20free%20now%3F">
+            <i data-lucide="mail"></i>
+            <span>Email</span>
+            <small>kiram.te.00724214121328@aust.edu</small>
+          </a>
+          <a class="contact-row magnetic" href="https://wa.me/8801606148203?text=Hi%2C%20Kiram%21%20I%20want%20a%20meeting%20appointment%20over%20some%20digital%20stuff%20with%20you.%20Are%20you%20free%20now%3F" target="_blank" rel="noreferrer">
+            <i data-lucide="message-circle"></i>
+            <span>WhatsApp</span>
+            <small>+8801606148203</small>
+          </a>
+          <a class="contact-row magnetic" href="https://www.linkedin.com/in/kiramahmedkhan" target="_blank" rel="noreferrer">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+            <small>linkedin.com/in/kiramahmedkhan</small>
+          </a>
+          <a class="contact-row magnetic" href="https://www.facebook.com/kiramahmedkhan" target="_blank" rel="noreferrer">
+            <i data-lucide="facebook"></i>
+            <span>Facebook</span>
+            <small>facebook.com/kiramahmedkhan</small>
+          </a>
+          <a class="contact-row magnetic" href="https://www.instagram.com/kiramahmedkhan" target="_blank" rel="noreferrer">
+            <i data-lucide="instagram"></i>
+            <span>Instagram</span>
+            <small>instagram.com/kiramahmedkhan</small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand-mark" href="index.html">KAK</a>
+      <nav aria-label="Footer navigation">
+        <a href="web.html">Web</a>
+        <a href="graph.html">Graphics</a>
+        <a href="digit.html">Digital</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>&copy; 2026 Kiram Ahmed Khan. Developer by logic. Designer by vision.</p>
     </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container"><div class="logo">KAK</div><p class="copy">© 2026 Kiram Ahmed Khan</p></div>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="js/main.js"></script>
+  </footer>
 </body>
 </html>

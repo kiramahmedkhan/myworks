@@ -1,143 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kiram Ahmed Khan — Front-End Developer & Designer</title>
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Kiram Ahmed Khan, a front-end web developer, creative designer, and digital builder from Bangladesh.">
+  <title>Kiram Ahmed Khan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="main.js"></script>
 </head>
-<body>
-
-<!-- LOADER -->
-<div id="loader">
-  <img src="https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_FDlCkozN8qN9w3UpNz4QE/4c038ba8-d826-4a85-8704-aecbf3a1f74d.png" alt="KAK">
-  <div class="loader-bar"><span></span></div>
-</div>
-
-<div id="progress"></div>
-<div class="cursor-dot"></div><div class="cursor-ring"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="logo">KAK</a>
-  <div class="burger"><span></span><span></span><span></span></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="about.html">Profile</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-bg"><img src="https://i.imgur.com/YIv16g9.png" alt="banner"></div>
-  <div class="hero-top">
-    <h6>Kiram Ahmed Khan</h6>
-    <div class="country">🇧🇩 Bangladesh</div>
-  </div>
-  <div class="hero-bottom">
-    <div class="roles" id="roles"></div>
-    <p class="hero-intro">Developer by logic. Designer by vision.</p>
-    <a href="contact.html" class="hire-btn">HIRE ME</a>
-  </div>
-  <a href="#about" class="scroll-arrow">↓</a>
-</header>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="container">
-    <h2 class="sec-title" data-aos="fade-up">About <span>Me</span></h2>
-    <div class="about-grid">
-      <div class="about-text" data-aos="fade-right">
-        <p>I'm a creative front-end developer and graphic designer passionate about
-        building modern web experiences, visual identities, and innovative digital
-        products. I combine clean development, aesthetic design, and AI-driven
-        creativity to turn ideas into impactful digital experiences.</p>
-        <a href="about.html" class="glass-btn know-more">Know More →</a>
-      </div>
-      <div class="about-img" data-aos="fade-left">
-        <img src="https://i.imgur.com/YIv16g9.png" alt="Kiram Ahmed Khan">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="projects" id="projects">
-  <div class="container">
-    <div class="proj-cards">
-      <a href="web-design.html" class="proj-card" data-aos="zoom-in">
-        <div class="icon">💻</div><h3>Web Design</h3>
-        <p>Modern, responsive & interactive websites.</p>
-      </a>
-      <a href="graphic-design.html" class="proj-card" data-aos="zoom-in" data-aos-delay="100">
-        <div class="icon">🎨</div><h3>Graphic Design</h3>
-        <p>Brand identities, posters & visual content.</p>
-      </a>
-      <a href="digital-creation.html" class="proj-card" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon">🎬</div><h3>Digital Creation</h3>
-        <p>Videos, voiceovers & AI-generated art.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <h2 class="sec-title" data-aos="fade-up">From some of my <span>regular clients…</span></h2>
-
-  <div class="marquee left">
-    <!-- duplicate the set twice for seamless loop -->
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=12"><h4>Naimum Mukim Marzan</h4><p>"Kiram brings ideas to life with stunning visuals and clean code. Highly reliable."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=33"><h4>Tahmid Rahman</h4><p>"Delivered our club website ahead of time. The animations are next-level."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=45"><h4>Sadia Islam</h4><p>"Professional, creative and super responsive. Loved working with him."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=12"><h4>Naimum Mukim Marzan</h4><p>"Kiram brings ideas to life with stunning visuals and clean code. Highly reliable."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=33"><h4>Tahmid Rahman</h4><p>"Delivered our club website ahead of time. The animations are next-level."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=45"><h4>Sadia Islam</h4><p>"Professional, creative and super responsive. Loved working with him."</p></div>
+<body class="home-page">
+  <div class="site-loader" id="site-loader" aria-label="Loading">
+    <div class="loader-logo">KAK</div>
+    <div class="loader-line"><span></span></div>
   </div>
 
-  <div class="marquee right">
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=51"><h4>Arif Hossain</h4><p>"His graphic designs gave our brand a whole new premium look."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=20"><h4>Mehjabin Karim</h4><p>"Creative direction on point. The promo video exceeded expectations."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=8"><h4>Rafsan Jani</h4><p>"Great communication and amazing attention to detail. Recommended!"</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=51"><h4>Arif Hossain</h4><p>"His graphic designs gave our brand a whole new premium look."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=20"><h4>Mehjabin Karim</h4><p>"Creative direction on point. The promo video exceeded expectations."</p></div>
-    <div class="tcard"><img src="https://i.pravatar.cc/120?img=8"><h4>Rafsan Jani</h4><p>"Great communication and amazing attention to detail. Recommended!"</p></div>
-  </div>
-</section>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
-<!-- CTA BUTTONS -->
-<section class="cta-sec">
-  <h2 class="sec-title" data-aos="fade-up">Let's <span>Connect</span></h2>
-  <div class="cta-row" data-aos="fade-up">
-    <a href="https://github.com/kiramahmedkhan" target="_blank" class="glass-btn">⌨ GitHub</a>
-    <a href="https://www.linkedin.com/in/kiramahmedkhan" target="_blank" class="glass-btn">in LinkedIn</a>
-    <a href="contact.html" class="glass-btn">✉ Contact</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="logo">KAK</div>
-    <div class="f-links">
+  <header class="site-header" data-site-header>
+    <a class="brand-mark" href="index.html" aria-label="Kiram Ahmed Khan home">KAK</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <i data-lucide="menu"></i>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="#about">About</a>
-      <a href="web-design.html">Web Design</a>
-      <a href="graphic-design.html">Graphic Design</a>
-      <a href="digital-creation.html">Digital Creation</a>
+      <a href="#projects">Projects</a>
+      <a href="about.html">Profile</a>
       <a href="contact.html">Contact</a>
-    </div>
-    <p class="copy">© 2026 Kiram Ahmed Khan • Developer by logic. Designer by vision.</p>
-  </div>
-</footer>
+    </nav>
+  </header>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="js/main.js"></script>
+  <main>
+    <section class="hero-section" id="home" aria-label="Kiram Ahmed Khan">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://i.imgur.com/YIv16g9.png" alt="">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-identity reveal-up">
+        <h1>Kiram Ahmed Khan</h1>
+        <p><span class="flag-bd" aria-hidden="true"><span></span></span>Bangladesh</p>
+      </div>
+
+      <div class="hero-copy reveal-up">
+        <p class="role-rotator" data-roles="Front-End Web Developer|Creative Designer|Digital Builder">
+          <span>Front-End Web Developer</span>
+        </p>
+        <p class="hero-line">Developer by logic. Designer by vision.</p>
+        <a class="hero-button magnetic" href="contact.html">HIRE ME</a>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="content-wrap">
+        <div class="section-label reveal-up">About Me</div>
+        <div class="about-layout">
+          <div class="about-copy reveal-up">
+            <p>I'm a creative front-end developer and graphic designer passionate about building modern web experiences, visual identities, and innovative digital products. I combine clean development, aesthetic design, and AI-driven creativity to turn ideas into impactful digital experiences.</p>
+            <a class="liquid-button magnetic" href="about.html">
+              <span>Know more</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="about-portrait reveal-up" data-drift-image>
+            <img src="https://i.imgur.com/YIv16g9.png" alt="Kiram Ahmed Khan">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-portal" id="projects" aria-labelledby="project-portal-title">
+      <h2 class="sr-only" id="project-portal-title">Portfolio project categories</h2>
+      <div class="portal-flow">
+        <a class="portal-card reveal-up magnetic" href="web.html">
+          <i data-lucide="monitor-smartphone"></i>
+          <span>Web Design</span>
+          <small>Responsive interfaces and interactive websites.</small>
+        </a>
+        <a class="portal-card reveal-up magnetic" href="graph.html">
+          <i data-lucide="pen-tool"></i>
+          <span>Graphic Design</span>
+          <small>Visual systems, posters, identities, and campaigns.</small>
+        </a>
+        <a class="portal-card reveal-up magnetic" href="digit.html">
+          <i data-lucide="sparkles"></i>
+          <span>Digital Creation</span>
+          <small>Promotional videos, voiceovers, scripts, and concepts.</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-section section-pad" aria-labelledby="cta-title">
+      <div class="content-wrap compact">
+        <div class="section-label reveal-up" id="cta-title">Connect</div>
+        <div class="cta-actions reveal-up">
+          <a class="liquid-button magnetic" href="https://github.com/kiramahmedkhan" target="_blank" rel="noreferrer">
+            <i data-lucide="github"></i>
+            <span>GitHub</span>
+          </a>
+          <a class="liquid-button magnetic" href="https://www.linkedin.com/in/kiramahmedkhan" target="_blank" rel="noreferrer">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a class="liquid-button magnetic" href="contact.html">
+            <i data-lucide="send"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand-mark" href="index.html">KAK</a>
+      <nav aria-label="Footer navigation">
+        <a href="web.html">Web</a>
+        <a href="graph.html">Graphics</a>
+        <a href="digit.html">Digital</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>&copy; 2026 Kiram Ahmed Khan. Developer by logic. Designer by vision.</p>
+    </div>
+  </footer>
 </body>
 </html>
