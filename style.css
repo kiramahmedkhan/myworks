@@ -343,6 +343,13 @@ a {
     linear-gradient(90deg, rgba(5, 5, 7, 0.6), transparent 40%, rgba(5, 5, 7, 0.35));
 }
 
+.hero-resume-link {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 8605;
+}
+
 .hero-identity {
   position: absolute;
   top: 92px;
@@ -994,9 +1001,15 @@ a {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.contact-row svg {
+.contact-row svg,
+.contact-row img {
   width: 24px;
   height: 24px;
+}
+
+.contact-row .facebook-icon,
+.contact-row .instagram-icon {
+  filter: grayscale(1) contrast(0) brightness(0);
 }
 
 .contact-row span {
